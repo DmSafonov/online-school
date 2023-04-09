@@ -1,0 +1,15 @@
+*{
+   box-sizing: border-box;
+}
+.body{
+   width: 1440px;
+   margin-left: auto;
+   margin-right: auto;
+   font-family: 'Montserrat-bold', sans-serif;
+   color: $second;
+};
+.olive__button{
+   background: $three;
+   border-radius: 5px;
+   color: $white;
+}
