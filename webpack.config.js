@@ -3,14 +3,13 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-
+const CopyPlugin = require("copy-webpack-plugin");
 const isProduction = process.env.NODE_ENV == "production";
 
-const stylesHandler = isProduction
-  ? MiniCssExtractPlugin.loader
-  : "style-loader";
+const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : "style-loader";
 
 const config = {
+  target: 'web',
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -21,8 +20,16 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      filename: "index.html",
       template: "index.html",
     }),
+    new CopyPlugin({
+      patterns: [
+          { from: "src/images", to: "images" },
+          { from: "src/assets/fonts", to: "assets/fonts" },
+
+      ],
+  }),
 
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/

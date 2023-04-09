@@ -1,0 +1,137 @@
+.header {
+   background-image:
+      url(/src/images/pictures/blue-vector.svg),
+      url(/src/images/pictures/student-picture.svg),
+      url(/src/images/pictures/light-grey-vector.svg),
+      url(/src/images/pictures/line-vector.svg),
+      url(/src/images/pictures/beige-vector.svg),
+      url(/src/images/pictures/orange-vector.svg),
+      url(/src/images/pictures/grey-vector.svg),
+      url(/src/images/pictures/light-blue-background.svg),
+      url(/src/images/pictures/olive-background.svg);
+   background-repeat: no-repeat;
+   background-position:
+      top 435px right 180px,
+      top 82px right 95px,
+      top 630px right 150px,
+      top 220px right 180px,
+      top 150px right 270px,
+      top 270px right 480px,
+      top 205px right 150px,
+      top right 10px,
+      top 105px left;
+}
+
+.nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 30px;
+   padding-bottom: 40px;
+   padding-right: 276px;
+   padding-left: 195px;
+}
+
+.nav__container {
+   display: flex;
+   align-items: center;
+}
+
+.nav__logo {
+   font-size: 24px;
+   line-height: 32px;
+   margin-right: 80px;
+}
+
+.nav__list {
+   display: flex;
+   gap: 20px;
+}
+.nav__item{
+   font-size: 14px;
+line-height: 24px;
+}
+
+.nav__button {
+   width: 137px;
+   font-size: 14px;
+   line-height: 22px;
+   padding: 15px 0 15px 10px;
+}
+
+.nav__button::after {
+   content: url(/dist/images/icons/array-button.svg);
+   padding: 21px 10px 21px 15px;
+}
+
+.about-use {
+   padding-left: 155px;
+   max-width: 650px;
+}
+
+.about-use__training {
+   font-size: 16px;
+   line-height: 24px;
+   color: $three;
+   margin-bottom: 35px;
+}
+
+.about-use__students {
+   font-size: 58px;
+   line-height: 80px;
+   color: $first;
+   margin-bottom: 35px;
+}
+
+.about-use__target {
+   font-family: "Montserrat-regular", sans-serif;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 30px;
+   width: 450px;
+   margin-bottom: 35px;
+}
+.about-use__buttons{
+   margin-bottom: 80px;
+}
+.about-use__button {
+   font-size: 14px;
+line-height: 22px;
+   padding: 15px 40px;
+   border: 1px solid $three;
+   border-radius: 5px;
+}
+.about-use__button:first-child{
+   margin-right: 10px;
+}
+.about-use__button:last-child{
+   color: $three;
+}
+.achievements{
+   padding-left: 155px;
+}
+.achievements__list{
+   display: flex;
+   gap: 30px;
+   margin-bottom: 320px;
+}
+.achievements__item{
+   width: 328px;
+   background-color: $white;
+   padding: 35px 0 35px 40px;
+   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+.achievements__image{
+   margin-bottom: 20px;
+}
+.achievements__headline{
+   font-size: 24px;
+line-height: 32px;
+color: $first;
+margin-bottom: 20px;
+}
+.achievements__line{
+   border: 2px solid #E74040;;
+   width: 50px;
+   margin-bottom: 20px;
+}
