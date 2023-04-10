@@ -1,0 +1,97 @@
+.packages__line {
+   border: 5px solid #E74040;
+   width: 94px;
+   margin-bottom: 35px;
+}
+
+.packages__headline {
+   font-size: 40px;
+   line-height: 50px;
+   color: $first;
+   margin-bottom: 35px;
+}
+
+.packages__description {
+   font-size: 14px;
+   line-height: 20px;
+   margin-bottom: 35px;
+}
+
+.packages__item-photo {
+   display: flex;
+   align-items: center;
+   padding-top: 65px;
+   padding-bottom: 89px;
+   padding-right: 280px;
+   padding-left: 195px;
+   justify-content: flex-end;
+   background-image:
+      url(/src/images/pictures/main-statistic.svg),
+      url(/src/images/pictures/main-singles.svg),
+      url(/src/images/pictures/main-latest.svg),
+      url(/src/images/pictures/main-girl.svg),
+      url(/src/images/pictures/main-background.svg);
+   background-repeat: no-repeat;
+   background-position:
+      top 150px left 593px,
+      top 130px left 227px,
+      bottom 30px left 260px,
+      bottom 20px left 290px,
+      top 20px left 300px;
+   margin-bottom: 335px;
+}
+
+.packages__container-photo {
+   width: 296px;
+}
+
+.packages__item-video {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 195px;
+   padding-right: 195px;
+}
+
+.packages__container-video {
+   width: 507px;
+   padding-top: 10px;
+}
+
+.packages__video {
+   position: relative;
+}
+
+.packages__image {
+   border-radius: 20px;
+}
+
+.packages__description {
+   width: 351px;
+   font-size: 14px;
+   line-height: 20px;
+   margin-bottom: 30px;
+}
+
+.packages__video-button {
+   position: absolute;
+   top: 135px;
+   right: 210px;
+}
+
+.packages__video-button::after {
+   content: url(/dist/images/pictures/main-video-button.svg);
+}
+
+.packages__button {
+   font-size: 14px;
+   line-height: 24px;
+   color: $three;
+   position: relative;
+}
+.packages__button::after{
+   position: absolute;
+   content: url(/dist/images/icons/array-button.svg);
+   padding-left: 10px;
+   padding-top: 4px;
+}
