@@ -1,0 +1,45 @@
+.news {
+   background: #FFF2F3;
+   text-align: center;
+   padding-top: 160px;
+   padding-bottom: 180px;
+}
+
+.news__title {
+   font-size: 14px;
+   line-height: 24px;
+   color: #96BB7C;
+   margin-bottom: 10px;
+}
+
+.news__headline {
+   font-size: 24px;
+   line-height: 32px;
+   color: $first;
+   margin-bottom: 10px;
+}
+
+.news__problems {
+   font-size: 14px;
+   line-height: 20px;
+   margin-bottom: 80px;
+}
+.news__mail {
+   font-family: 'Montserrat-regular', sans-serif;
+   font-size: 14px;
+   line-height: 28px;
+   background: $white;
+   width: 571px;
+   padding: 15px 0px 15px 20px;
+   
+}
+
+.news__subscribe {
+   font-family: 'Montserrat-regular', sans-serif;
+   font-size: 14px;
+   line-height: 28px;
+   background: $three;
+   color: $white;
+   padding: 15px 22px;
+   
+}

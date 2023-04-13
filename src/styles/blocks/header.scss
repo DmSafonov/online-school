@@ -1,14 +1,14 @@
 .header {
    background-image:
-      url(/src/images/pictures/blue-vector.svg),
-      url(/src/images/pictures/student-picture.svg),
-      url(/src/images/pictures/light-grey-vector.svg),
-      url(/src/images/pictures/line-vector.svg),
-      url(/src/images/pictures/beige-vector.svg),
-      url(/src/images/pictures/orange-vector.svg),
-      url(/src/images/pictures/grey-vector.svg),
-      url(/src/images/pictures/light-blue-background.svg),
-      url(/src/images/pictures/olive-background.svg);
+      url(/src/images/icons/header/blue-vector.svg),
+      url(/src/images/pictures/header/student.svg),
+      url(/src/images/icons/header/light-grey-vector.svg),
+      url(/src/images/icons/header/line-vector.svg),
+      url(/src/images/icons/header/beige-vector.svg),
+      url(/src/images/icons/header/orange-vector.svg),
+      url(/src/images/icons/header/grey-vector.svg),
+      url(/src/images/pictures/header/light-blue.png),
+      url(/src/images/pictures/header/olive.svg);
    background-repeat: no-repeat;
    background-position:
       top 435px right 180px,
@@ -26,10 +26,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding-top: 30px;
-   padding-bottom: 40px;
-   padding-right: 276px;
-   padding-left: 195px;
+   padding: 30px 278px 40px 195px;
 }
 
 .nav__container {
@@ -38,12 +35,13 @@
 }
 
 .nav__logo {
-   font-size: 24px;
+   font-size: 23px;
    line-height: 32px;
-   margin-right: 80px;
+   margin-right: 84px;
 }
 
 .nav__list {
+   align-items: center;
    display: flex;
    gap: 20px;
 }
@@ -61,7 +59,7 @@
 }
 
 .nav__button::after {
-   content: url(/dist/images/icons/array-button.svg);
+   content: url(/src/images/icons/header/array.svg);
    padding: 21px 10px 21px 15px;
 }
 
@@ -74,11 +72,11 @@
    font-size: 16px;
    line-height: 24px;
    color: $three;
-   margin-bottom: 35px;
+   margin-bottom: 33px;
 }
 
 .about-use__students {
-   font-size: 58px;
+   font-size: 57px;
    line-height: 80px;
    color: $first;
    margin-bottom: 35px;
@@ -87,7 +85,6 @@
 .about-use__target {
    font-family: "Montserrat-regular", sans-serif;
    font-size: 20px;
-   font-weight: 400;
    line-height: 30px;
    width: 450px;
    margin-bottom: 35px;
@@ -100,13 +97,13 @@
 .about-use__button {
    font-size: 14px;
    line-height: 22px;
-   padding: 15px 40px;
+   padding: 14px 39px;
    border: 1px solid $three;
    border-radius: 5px;
 }
 
 .about-use__button:first-child {
-   margin-right: 10px;
+   margin-right: 5px;
 }
 
 .about-use__button:last-child {
@@ -120,10 +117,12 @@
 .achievements__list {
    display: flex;
    gap: 30px;
-   margin-bottom: 320px;
+   margin-bottom: 330px;
 }
 
 .achievements__item {
+   font-size: 14px;
+   line-height: 20px;
    width: 328px;
    background-color: $white;
    padding: 35px 0 35px 40px;
@@ -142,7 +141,7 @@
 }
 
 .achievements__line {
-   border: 2px solid #E74040;
+   border: 2px solid $line;
    ;
    width: 50px;
    margin-bottom: 20px;
