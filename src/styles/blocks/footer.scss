@@ -23,29 +23,27 @@
    font-size: 14px;
    line-height: 24px;
    margin-bottom: 10px;
+   position: relative;
 }
 .contacts__item--phone{
-   position: relative;
    padding-left: 165px;
 }
 
 .contacts__item--phone::before{
    content:url(/src/images/icons/footer/contacts-phone.svg);
    position: absolute;
-   left: 135px;
+   left: 130px;
 }
 
 .contacts__item--addres{
-   position: relative;
    padding-left: 34px;
 }
 .contacts__item--addres::before{
    content:url(/src/images/icons/footer/contacts-geo.svg);
    position: absolute;
-   left: 5px;
+   left: 0;
 }
 .contacts__item--mail{
-   position: relative;
    padding-left: 127px;
 }
 .contacts__item--mail::before{
@@ -57,10 +55,7 @@
    background: #FAFAFA;
    display: flex;
    justify-content: space-between;
-   padding-top: 25px;
-   padding-bottom: 25px;
-   padding-left: 195px;
-   padding-right: 250px;
+   padding: 25px 250px 25px 195px;
 }
 .footer__copyright{
    font-size: 14px;

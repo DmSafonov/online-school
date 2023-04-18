@@ -26,9 +26,11 @@
    gap: 25px;
    margin-bottom: 390px;
 }
+.courses__item{
+   position: relative;
+}
 
 .courses__buttons-container {
-   position: relative;
    margin-bottom: 25px;
 }
 
@@ -49,26 +51,28 @@
    width: 40px;
    height: 40px;
 }
-
-.courses__button-image--like {
-   background-image: url(/src/images/icons/courses/courses-like.svg);
-   background-repeat: no-repeat;
-   top: 235px;
-   left: 50px;
+.courses__button-image--like{
+   top: 236px;
+   left: 47px;
+}
+.courses__button-image--cart{
+   top: 236px;
+   left: 97px;
+}
+.courses__button-image--eye{
+   top: 236px;
+   left: 147px;
+}
+.courses__button-image--like::after {
+   content: url(/src/images/icons/courses/courses-like.svg);
 }
 
-.courses__button-image--cart {
-   background-image: url(/src/images/icons/courses/courses-cart.svg);
-   background-repeat: no-repeat;
-   top: 235px;
-   left: 100px;
+.courses__button-image--cart::after {
+   content: url(/src/images/icons/courses/courses-cart.svg);
 }
 
-.courses__button-image--eye {
-   background-image: url(/src/images/icons/courses/courses-eye.svg);
-   background-repeat: no-repeat;
-   top: 235px;
-   left: 150px;
+.courses__button-image--eye::after {
+   content: url(/src/images/icons/courses/courses-eye.svg);
 }
 
 .courses__container {
@@ -102,7 +106,7 @@
 
 .courses__quantity-sales::before {
    content: url(/src/images/icons/courses/courses-quantity.svg);
-   margin-right: 5px;
+   margin-right: 15px;
 }
 
 .courses__quantity-sales {
