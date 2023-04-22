@@ -3,16 +3,20 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
 const isProduction = process.env.NODE_ENV == "production";
 
 const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : "style-loader";
 
 const config = {
-  target: 'web',
+  stats: {
+    children: true,
+  },
   entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    filename: "[name].js",
+    path: path.resolve(__dirname, "docs"),
+    clean: true,
+    assetModuleFilename: "assets/[hash][ext][query]",
   },
   devServer: {
     open: true,
@@ -22,20 +26,17 @@ const config = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "index.html",
-    }),
-    new CopyPlugin({
-      patterns: [
-          { from: "src/images", to: "images" },
-          { from: "src/assets/fonts", to: "assets/fonts" },
-
-      ],
-  }),
+    })
 
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],
   module: {
     rules: [
+      {
+        test: /\.html$/,
+        use: 'html-loader'
+      },
       {
         test: /\.(js|jsx)$/i,
         loader: "babel-loader",
@@ -50,7 +51,7 @@ const config = {
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-        type: "asset",
+        type: "asset/resource",
       },
 
       // Add your rules for custom modules here
