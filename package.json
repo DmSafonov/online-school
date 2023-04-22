@@ -26,6 +26,7 @@
     "serve": "webpack serve"
   },
   "dependencies": {
-    "copy-webpack-plugin": "^11.0.0"
+    "copy-webpack-plugin": "^11.0.0",
+    "html-loader": "^4.2.0"
   }
 }

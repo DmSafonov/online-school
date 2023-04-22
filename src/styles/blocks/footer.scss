@@ -1,0 +1,75 @@
+.footer__container {
+   display: flex;
+   padding-top: 50px;
+   padding-left: 195px;
+   gap: 60px;
+   margin-bottom: 40px;
+}
+
+.footer__headline {
+   font-size: 16px;
+   line-height: 24px;
+   color: $first;
+   margin-bottom: 20px;
+}
+
+.footer__item {
+   font-size: 14px;
+   line-height: 24px;
+   margin-bottom: 10px;
+}
+
+.contacts__item {
+   font-size: 14px;
+   line-height: 24px;
+   margin-bottom: 10px;
+   position: relative;
+}
+.contacts__item--phone{
+   padding-left: 165px;
+}
+
+.contacts__item--phone::before{
+   content:url(/src/images/icons/footer/contacts-phone.svg);
+   position: absolute;
+   left: 130px;
+}
+
+.contacts__item--addres{
+   padding-left: 34px;
+}
+.contacts__item--addres::before{
+   content:url(/src/images/icons/footer/contacts-geo.svg);
+   position: absolute;
+   left: 0;
+}
+.contacts__item--mail{
+   padding-left: 127px;
+}
+.contacts__item--mail::before{
+   content:url(/src/images/icons/footer/contacts-mail.svg);
+   position: absolute;
+   left: 95px;
+}
+.footer__copyright-and-social{
+   background: #FAFAFA;
+   display: flex;
+   justify-content: space-between;
+   padding: 25px 250px 25px 195px;
+}
+.footer__copyright{
+   font-size: 14px;
+line-height: 24px;
+}
+
+.footer__facebook::before{
+   content:url(/src/images/icons/footer/social-facebook.svg);
+   margin-right: 20px;
+}
+.footer__instagram::before{
+   content:url(/src/images/icons/footer/social-instagram.svg);
+   margin-right: 20px;
+}
+.footer__twitter::before{
+   content:url(/src/images/icons/footer/social-twitter.svg);
+}
